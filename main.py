@@ -50,17 +50,7 @@ def caesar(original_text, shift_amount, encode_or_decode):
         output_text += alphabet[shifted_position]
 
     # Output new word to console
-    print(f"Here is the {encode_or_decode}d result: {output_text}\n\n")
-
-
-# # Ask input questions
-# direction = input("Type 'encode' to encrypt, type 'decode' to decrypt:\n").lower()
-# text = input("Type your message:\n").lower()
-# shift = int(input("Type the shift number:\n"))
-
-# # Call the function
-# caesar(original_text=text, shift_amount=shift, encode_or_decode=direction)
-
+    print(f"Here is the {encode_or_decode}d result: {output_text}\n")
  
 
 # Check if restart variable is set to yes
@@ -78,7 +68,6 @@ while restarting == "yes":
     # Ask the user to restart program
     restart = input("Hit Yes to end the program or No to start again.\n").lower()
 
-# Set restart variable to no to end the program
-if restart == "no":
-    restarting = "no"
-
+    # Set restart variable to no to end the program
+    if restart == "no":
+        restarting = "no"
